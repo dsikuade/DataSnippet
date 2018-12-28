@@ -10,7 +10,7 @@ import fs from 'fs';
 import chalk from 'chalk';
 import jsf from 'json-schema-faker';
 import {schema} from './mockDataSchema';
-
+jsf.extend('faker', () => require('faker'));
 const json = JSON.stringify(jsf(schema));
 
 fs.writeFile("./src/api/db.json", json, function (err) {

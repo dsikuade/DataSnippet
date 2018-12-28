@@ -15,15 +15,18 @@ export const schema = {
           },
           "firstName": {
             "type": "string",
-            "maximum": 20
+            "maximum": 20,
+            "faker": "name.firstName"
           },
           "lastName": {
             "type": "string",
-            "maximum": 20
+            "maximum": 20,
+            "faker": "name.lastName"
           },
           "email": {
             "type": "string",
-            "maximum": 40
+            "maximum": 40,
+            "faker": "internet.email"
           }
         },
         "required": ["id", "firstName", "lastName", "email"]
