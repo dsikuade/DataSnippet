@@ -1,0 +1,6 @@
+install heroku-cli in vscode
+heroku login
+heroku create will create an app
+heroku git:remote -a intense-reaches-48963 (intense blah is the name of the app heroku created in this instance)
+git push heroku master (send heroku the repo)
+https://intense-reaches-48963.herokuapp.com/ was created in this instance
